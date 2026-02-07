@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerencia Run - Painel do Personal</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="brand">Gerencia Run</div>
+            <div class="nav-actions">
+                <a class="btn btn-outline" href="/logout">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container grid grid-2">
+        <section class="card">
+            <h2>Alunos cadastrados</h2>
+            <p class="footer-note">Selecione um corredor para gerenciar o calendário de treinos.</p>
+            <div class="list" id="userList"></div>
+        </section>
+
+        <section class="card">
+            <h2>Orientações rápidas</h2>
+            <div class="list">
+                <div class="list-item">
+                    <div>
+                        <h3>Controle total</h3>
+                        <p>Você pode criar, editar e excluir treinos em cada calendário.</p>
+                    </div>
+                    <span class="badge">Admin</span>
+                </div>
+                <div class="list-item">
+                    <div>
+                        <h3>Segurança do atleta</h3>
+                        <p>Os corredores enxergam os treinos apenas para leitura.</p>
+                    </div>
+                    <span class="badge">Read-only</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="deleteModal">
+        <div class="modal-content">
+            <h3>Tem certeza que deseja excluir?</h3>
+            <p class="footer-note">Essa ação remove o atleta e seus treinos.</p>
+            <div class="modal-actions">
+                <button class="btn btn-outline" id="cancelDelete">Não</button>
+                <button class="btn btn-danger" id="confirmDelete">Sim, excluir</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerencia Run - Login</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="card login-card">
+            <h1>Gerencia Run</h1>
+            <p>Faça login para gerenciar a rotina de treinos com segurança.</p>
+            <form method="post" action="/login">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input id="username" name="username" type="text" placeholder="Seu usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input id="password" name="password" type="password" placeholder="Sua senha" required>
+                </div>
+                <button class="btn btn-primary" type="submit">Entrar</button>
+            </form>
+            <p class="footer-note">Usuário admin: admin / admin123</p>
+        </div>
+    </div>
+</body>
+</html>
